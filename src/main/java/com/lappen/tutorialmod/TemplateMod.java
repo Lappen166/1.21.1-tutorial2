@@ -13,5 +13,5 @@ public class TemplateMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-	}
+	}//hilfe bitte
 }
