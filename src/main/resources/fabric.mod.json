@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "template-mod",
+	"version": "${version}",
+	"name": "Template Mod",
+	"description": "Das ist jetzt der dritte Anlauf. Bald werde ich Fuchsig",
+	"authors": [
+		"Lappen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Lappen166/First-Minecraft-Mod.git"
+	},
+	"license": "MIT",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lappen.tutorialmod.TemplateMod"
+		],
+		"fabric-datagen": [
+			"com.lappen.tutorialmod.TemplateModDataGenerator"
+		],
+		"client": [
+			"com.lappen.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"template-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
